@@ -1,8 +1,14 @@
 .weather-container {
-  background: purple;
+  background: #78c841;
   max-width: 600px;
   margin: 48px auto;
   padding: 15px 20px;
   border: none;
   border-radius: 10px;
+}
+.input-weather-element {
+  font-size: 16px;
+  background: white;
+  box-shadow: 10px 10px 20px rgba(70, 63, 63, 0.2);
+  padding: 15px 20px;
 }
