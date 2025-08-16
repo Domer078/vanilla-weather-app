@@ -1,5 +1,5 @@
 .weather-container {
-  background: #78c841;
+  background: #f9f7fe;
   max-width: 600px;
   margin: 48px auto;
   padding: 15px 20px;
@@ -7,17 +7,20 @@
   border-radius: 10px;
 }
 .input-weather-element {
-  font-size: 16px;
-  background: white;
-  box-shadow: 10px 10px 20px rgba(70, 63, 63, 0.2);
-  padding: 15px 19px;
-  width: 80%;
   border: none;
-  border-radius: 10px;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  padding: 20px;
+  width: 75%;
+  border-radius: 6px;
 }
 .weather-element-submit {
-  padding: 12px 14px;
+  margin-left: 5px;
   font-size: 16px;
+  background-color: #885df1;
+  color: white;
   border: none;
-  border-radius: 10px;
+  padding: 20px;
+  line-height: 1;
+  border-radius: 5px;
 }
