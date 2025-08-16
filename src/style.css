@@ -1,0 +1,8 @@
+.weather-container {
+  background: purple;
+  max-width: 600px;
+  margin: 48px auto;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+}
