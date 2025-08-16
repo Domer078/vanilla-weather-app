@@ -16,6 +16,8 @@
   border-radius: 10px;
 }
 .weather-element-submit {
-  display: block;
-  margin: 22px auto;
+  padding: 12px 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
 }
