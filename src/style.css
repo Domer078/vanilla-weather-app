@@ -10,5 +10,12 @@
   font-size: 16px;
   background: white;
   box-shadow: 10px 10px 20px rgba(70, 63, 63, 0.2);
-  padding: 15px 20px;
+  padding: 15px 19px;
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+}
+.weather-element-submit {
+  display: block;
+  margin: 22px auto;
 }
