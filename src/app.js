@@ -1,11 +1,16 @@
 function displayTemperature(response) {
+  let temperatureElement = document.querySelector("#weather-temperature");
+  let weatherCityName = document.querySelector("#weather-city-name");
+  let temperature = Math.round(response.data.currentConditions.temp);
+  weatherCityName = response.data.address;
+  temperatureElement.innerHTML = temperature;
   console.log(response.data);
 }
 
 function displayCity(event) {
   event.preventDefault();
   let inputElement = document.querySelector("#input-element");
-  //   let weatherCityName = document.querySelector("#weather-city-name");
+
   let city = inputElement.value;
 
   let apiKey = "NNUKPDBZJA6GKCMAG54WNABX6";
