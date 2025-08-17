@@ -47,7 +47,7 @@ main {
   display: flex;
   justify-content: space-between;
 }
-.current-weather-details strong {
+.weather-details strong {
   color: red;
 }
 .weather-city-name {
