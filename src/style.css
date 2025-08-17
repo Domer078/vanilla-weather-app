@@ -47,6 +47,9 @@ main {
   display: flex;
   justify-content: space-between;
 }
+.weather-container-background strong {
+  color: red;
+}
 .weather-city-name {
   margin: 0;
   font-size: 38px;
