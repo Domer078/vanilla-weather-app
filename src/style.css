@@ -61,3 +61,28 @@ main {
   font-size: 38px;
   line-height: 48px;
 }
+.weather-details {
+  font-size: 48px;
+}
+.weather-temperature-icon {
+  position: relative;
+  top: -8px;
+  font-size: 40px;
+  margin-right: 10px;
+}
+.weather-temperature {
+  font-size: 80px;
+  font-weight: bold;
+}
+.weather-temperature-unit {
+  font-size: 28px;
+  position: relative;
+  top: -38px;
+}
+footer {
+  border-top: 1px solid #f9f7fe;
+  text-align: center;
+  padding-top: 15px;
+
+  color: rgba(39, 33, 66, 0.4);
+}
