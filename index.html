@@ -15,12 +15,13 @@
   <body>
     <div class="weather-container">
       <header>
-        <form>
+        <form id="weather-submit">
           <input
             type="text"
             placeholder="Enter a city.."
             required
             class="input-weather-element"
+            id="input-element"
           />
           <input type="submit" value="search" class="weather-element-submit" />
         </form>
@@ -28,7 +29,7 @@
       <main>
         <div class="weather-container-background">
           <div>
-            <h1 class="weather-city-name">Paris</h1>
+            <h1 class="weather-city-name" id="weather-city-name">Paris</h1>
 
             <p class="current-weather-details">
               Sunday 0:11, clear sky
@@ -59,5 +60,6 @@
         >
       </footer>
     </div>
+    <script src="src/app.js"></script>
   </body>
 </html>
