@@ -47,8 +47,14 @@ main {
   display: flex;
   justify-content: space-between;
 }
-.weather-details strong {
+.current-weather-details strong {
   color: red;
+}
+.current-weather-details {
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 .weather-city-name {
   margin: 0;
