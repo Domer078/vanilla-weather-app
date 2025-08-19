@@ -1,10 +1,10 @@
 function displayTemperature(response) {
+  console.log(response.data);
   let temperatureElement = document.querySelector("#weather-temperature");
   let weatherCityName = document.querySelector("#weather-city-name");
   let temperature = Math.round(response.data.currentConditions.temp);
   weatherCityName = response.data.address;
   temperatureElement.innerHTML = temperature;
-  console.log(response.data);
 }
 
 function displayCity(event) {
@@ -13,8 +13,8 @@ function displayCity(event) {
 
   let city = inputElement.value;
 
-  let apiKey = "63340413at53cc6c6ba7a81a11oc3f05";
-  let apiKeyUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&unit=metric`;
+  let apiKey = "NNUKPDBZJA6GKCMAG54WNABX6";
+  let apiKeyUrl = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${city}?key=${apiKey}&units=metric`;
 
   axios.get(apiKeyUrl).then(displayTemperature);
 }
