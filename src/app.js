@@ -6,6 +6,31 @@ function displayTemperature(response) {
   weatherCityName.innerHTML = response.data.city;
   temperatureElement.innerHTML = temperature;
 }
+function handleData() {
+  let date = new Date();
+  let day = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  let hour = date.getHours();
+  let minutes = date.getMinutes();
+  let days = day[date.getDay()];
+
+  if (hour < 10) {
+    hour = `0${hour}`;
+  }
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  console.log(minutes);
+}
+handleData();
 
 function displayCity(event) {
   event.preventDefault();
