@@ -1,10 +1,12 @@
 function displayTemperature(response) {
-  console.log(response.data);
   let temperatureElement = document.querySelector("#weather-temperature");
   let weatherCityName = document.querySelector("#weather-city-name");
   let temperature = Math.round(response.data.temperature.current);
+  let description = document.querySelector("#description");
+
   weatherCityName.innerHTML = response.data.city;
   temperatureElement.innerHTML = temperature;
+  description.innerHTML = response.data.condition.description;
 }
 
 function displayCity(event) {
@@ -43,7 +45,6 @@ function displayCity(event) {
 
   let currentElement = document.querySelector("#current-weather-time");
   currentElement.innerHTML = `${formatDate}, ${hour}:${minutes}`;
-  console.log(currentElement);
 }
 
 let weatherSubmit = document.querySelector("#weather-submit");
