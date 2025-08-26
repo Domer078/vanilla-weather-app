@@ -6,31 +6,6 @@ function displayTemperature(response) {
   weatherCityName.innerHTML = response.data.city;
   temperatureElement.innerHTML = temperature;
 }
-function handleData() {
-  let date = new Date();
-  let day = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-
-  let hour = date.getHours();
-  let minutes = date.getMinutes();
-  let days = day[date.getDay()];
-
-  if (hour < 10) {
-    hour = `0${hour}`;
-  }
-  if (minutes < 10) {
-    minutes = `0${minutes}`;
-  }
-  console.log(minutes);
-}
-handleData();
 
 function displayCity(event) {
   event.preventDefault();
@@ -42,6 +17,33 @@ function displayCity(event) {
   let apiKeyUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
 
   axios.get(apiKeyUrl).then(displayTemperature);
+  let date = new Date();
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  let hour = date.getHours();
+  let minutes = date.getMinutes();
+  let day = date.getDay();
+
+  let formatDate = days[day];
+
+  if (hour < 10) {
+    hour = `0${hour}`;
+  }
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  let currentElement = document.querySelector("#current-weather-time");
+  currentElement.innerHTML = `${formatDate}, ${hour}:${minutes}`;
+  console.log(currentElement);
 }
 
 let weatherSubmit = document.querySelector("#weather-submit");
