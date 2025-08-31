@@ -65,8 +65,10 @@ main {
   font-size: 48px;
 }
 .weather-temperature-icon {
-  width: 88px;
-  height: 88px;
+  position: relative;
+  top: -8px;
+  font-size: 40px;
+  margin-right: 10px;
 }
 .weather-temperature {
   font-size: 80px;
