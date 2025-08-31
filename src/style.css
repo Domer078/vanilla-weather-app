@@ -73,6 +73,8 @@ main {
 .weather-temperature {
   font-size: 80px;
   font-weight: bold;
+  font-weight: 88px;
+  height: 88px;
 }
 .weather-temperature-unit {
   font-size: 28px;
